@@ -1,0 +1,26 @@
+package com.swea.difficult2;
+
+import java.util.Scanner;
+
+public class ZigzagNumber_1986 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int T = sc.nextInt();
+
+		for (int t = 1; t <= T; t++) {
+			int result = 0;
+			int N = sc.nextInt();
+
+			for (int i = 1; i <= N; i++) {
+				if (i % 2 != 0) {
+					result += i;
+				} else {
+					result -= i;
+				}
+			}
+
+			System.out.format("#%d %d\n", t, result);
+		}
+	}
+}
