@@ -14,7 +14,7 @@ public class Parenthesis_9012 {
 			String st = sc.next();
 			String[] arr = st.split(""); // 문자열을 쪼개 배열에 저장
 			boolean check = true; // 괄호 문자열인지 아닌지 체크하는 변수
-
+			
 			for (int i = 0; i < arr.length; i++) {
 				if (arr[i].equals("(")) { // 여는 괄호일 경우 push
 					stack.push(arr[i]);
