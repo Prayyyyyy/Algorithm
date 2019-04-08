@@ -31,7 +31,6 @@ public class BeadEscape2_13460 {
 	static void bfs() {
 		boolean[][][][] visit = new boolean[10][10][10][10]; // 빨간 구슬, 파란 구슬이 방문한 좌표를 체크
 		Queue<Info> qu = new LinkedList<Info>();
-		int res = -1; // 결과값
 
 		qu.add(info);
 		visit[info.rx][info.ry][info.bx][info.by] = true;
